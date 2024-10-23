@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Cart extends Model
 {
     use HasFactory;
-    private $table = "carts";
+    protected $table = "carts";
 
     public function user() {
         return $this->hasOne(User::class);
